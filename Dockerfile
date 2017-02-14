@@ -2,12 +2,12 @@
 FROM praqma/yocto-build-container:ubuntu16.04-0.0.1
 
 ENV JENKINS_SWARM_VERSION 2.2
-ENV JAVA_HOME /usr/lib/jvm/java-1.7-openjdk
+ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 
 # We need to install java so we can run swarm slave
 USER root
 RUN apt-get -qq --yes update && \
-    apt-get -qq --yes install openjdk-7-jre curl && \
+    apt-get -qq --yes install openjdk-8-jre curl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
