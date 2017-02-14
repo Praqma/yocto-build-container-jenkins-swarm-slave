@@ -1,5 +1,5 @@
 # Base image for building Yocto images
-FROM praqma/yocto-build-container:0.1.1
+FROM praqma/yocto-build-container:ubuntu16.04-0.0.1
 
 ENV JENKINS_SWARM_VERSION 2.2
 ENV JAVA_HOME /usr/lib/jvm/java-1.7-openjdk
